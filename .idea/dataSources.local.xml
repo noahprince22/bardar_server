@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails bar_stats: production" uuid="6204e76f-7e08-4148-9cf4-f84069a1cbbd">
+      <user-name>bar_stats</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe8dfebdff8dff5dff9dffedfebdffedff9dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails bar_stats: test" uuid="c1c2475c-671c-4753-822d-cc11a798ba77" />
+    <data-source name="Rails bar_stats: development" uuid="b5fbb8b6-6491-4e3a-bed9-df14c98f28b8">
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>
