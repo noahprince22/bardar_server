@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160427202652) do
+ActiveRecord::Schema.define(version: 20160428170510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20160427202652) do
     t.integer  "freshness"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float    "lat"
-    t.float    "lng"
-    t.boolean  "is_current"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
   end
 
   create_table "reports", force: :cascade do |t|
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20160427202652) do
     t.datetime "updated_at",   null: false
     t.integer  "bar_id"
     t.string   "user_id"
+    t.integer  "crowd"
+    t.boolean  "is_current"
   end
 
   add_index "reports", ["bar_id"], name: "index_reports_on_bar_id", using: :btree

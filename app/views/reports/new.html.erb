@@ -1,0 +1,56 @@
+<%= form_for :report, url: reports_path do |f| %>
+
+    <% if @report.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@report.errors.count, "error") %> prohibited
+            this article from being saved:
+          </h2>
+          <ul>
+            <% @report.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <p>
+      <%= f.label :line_length %><br>
+      <%= f.text_area :line_length%>
+    </p>
+
+    <p>
+      <%= f.label :cover_charge %><br>
+      <%= f.text_area :cover_charge %>
+    </p>
+
+    <p>
+      <%= f.label :ratio %><br>
+      <%= f.text_area :ratio %>
+    </p>
+
+    <p>
+      <%= f.label :avg_age %><br>
+      <%= f.text_area :avg_age %>
+    </p>
+
+    <p>
+      <%= f.label :crowd %><br>
+      <%= f.text_area :crowd %>
+    </p>
+
+    <p>
+      <%= f.label :user_id %><br>
+      <%= f.text_area :user_id %>
+    </p>
+
+    <p>
+      <%= f.label :bar_id %><br>
+      <%= f.text_area :bar_id %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+
+<% end %>

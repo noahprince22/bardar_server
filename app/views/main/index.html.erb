@@ -1,0 +1,15 @@
+<%= form_for :city, url: "/", method: :get do |f| %>
+    <p>
+      <%= f.select(:city, @cities)%>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+
+<% @bars.each do |bar|%>
+  <ul>
+    <li>Bar Name: <%=bar.name%></li>
+  </ul>
+<% end %>

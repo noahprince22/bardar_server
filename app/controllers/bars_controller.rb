@@ -12,7 +12,7 @@ class BarsController < ApplicationController
   end
 
   def show
-
+    render json: Bar.find(params[:id])
   end
 
   def update
@@ -23,4 +23,7 @@ class BarsController < ApplicationController
 
   end
 
+  def index
+    render json: Bar.all
+  end
 end

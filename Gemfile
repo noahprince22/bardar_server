@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rufus-scheduler'
 gem 'geokit-rails'
 gem 'yelp'
+gem 'geocoder'
+gem 'distribution'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -43,6 +45,12 @@ gem 'rspec-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+end
+
+group :test do
+  gem 'fabrication'
+  gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do
