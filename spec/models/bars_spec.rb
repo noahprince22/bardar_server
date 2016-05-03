@@ -1,18 +1,25 @@
 require "spec_helper"
 require "rails_helper"
 
-RSpec.describe "Bars" do
+RSpec.describe "Bars", type: :model do
   describe ("current reports") do
     it("creates a default current report") do
       expect(Fabricate(:bar).reports.current).to be_a(Report)
     end
 
-    it ("#get_current_report") do
-      #@bar = create(:bar)
-      #@user = create(:user)
-      @report = Fabricate(:report, is_current: true)
+    it ("gets recent reports") do
+      bar = Fabricate(:bar)
+      Fabricate(:report, is_current: false, created_at: DateTime.now - 1.1, bar: bar)
+      report = Fabricate(:report, is_current: false, created_at: DateTime.now - 0.9, bar: bar)
 
-      expect(@report.bar.reports.current.id).to be(@report.id)
+      expect(bar.reports.recent.count).to eq(1)
+      expect(bar.reports.recent.first).to eq(report)
+    end
+
+    it ("#get_current_report") do
+      bar = Fabricate(:bar)
+
+      expect(bar.reports.current).to_not be_nil
     end
 
     describe("#update_current_stats") do
@@ -34,16 +41,16 @@ RSpec.describe "Bars" do
                   avg_age: 0,
                   bar: @bar,
                   crowd: 0,
-                  created_at: DateTime.now)
+                  created_at: Time.now)
 
         current = @bar.reports.current
 
-        expect(old.line_length).to be > current.line_length
-        expect(old.cover_charge).to be > current.cover_charge
-        expect(old.ratio).to be > current.ratio
-        expect(old.avg_age).to be > current.avg_age
-        expect(old.crowd).to be > current.crowd
-        expect(Bar.find(@bar.id).freshness).to be > @bar.freshness
+        expect(old.line_length).to be > current.line_length unless old.line_length == 0
+        expect(old.cover_charge).to be > current.cover_charge unless old.cover_charge == 0
+        expect(old.ratio).to be > current.ratio unless old.ratio == 0
+        expect(old.avg_age).to be > current.avg_age unless old.avg_age == 0
+        expect(old.crowd).to be > current.crowd unless old.crowd == 0
+        expect(Bar.find(@bar.id).freshness).to be > 9
       end
     end
   end
@@ -60,6 +67,8 @@ RSpec.describe "Bars" do
     let (:lng) { 27 }
 
     it ("can populate the database given a list of cities that are supported") do
+      Bar.destroy_all # This assumes db is empty
+
       allow(business).to receive(:id).and_return id
       allow(business).to receive(:name).and_return name
       allow(business).to receive(:location).and_return location

@@ -1,3 +1,13 @@
+class UserReportValidator < ActiveModel::Validator
+  def validate(record)
+    created_at = record.created_at ? record.created_at : Time.now
+    if record.user_id != "admin" and
+        Report.where("created_at > ?", created_at - 15.minutes).where(user: record.user).count > 0
+      record.errors[:base] << "Users cannot create a report for the same bar more than once in a 15 minute window"
+    end
+  end
+end
+
 class Report < ActiveRecord::Base
   belongs_to :bar
   belongs_to :user
@@ -8,6 +18,11 @@ class Report < ActiveRecord::Base
             :avg_age,
             :crowd,
             presence: true
+
+  validates_inclusion_of :is_upvote, :in => [true, false]
+
+
+  validates_with UserReportValidator
   after_create :update_bar_current
 
   def update_bar_current
@@ -18,13 +33,6 @@ class Report < ActiveRecord::Base
     #  the thing we're creating is the current record
     if (current)
       self.bar.update_current_stats
-
-      # current.update(self.attributes.slice(:user_id))
-      # current.is_current = false
-      # current.save!
-      #
-      # self.is_current = true
-      # self.save
     end
   end
 

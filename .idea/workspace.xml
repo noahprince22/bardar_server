@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="RSpecRunConfigurationType" name="Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e70bbdaf-9853-4878-9657-e2868c431d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/heuristic.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reports/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/fabricators/fabricators.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/reports_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/shared_db_connection.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bar_stats.iml" afterPath="$PROJECT_DIR$/.idea/bar_stats.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/bars_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/bars_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/heuristic.rb" afterPath="$PROJECT_DIR$/app/helpers/heuristic.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bar.rb" afterPath="$PROJECT_DIR$/app/models/bar.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report.rb" afterPath="$PROJECT_DIR$/app/models/report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/task_scheduler.rb" afterPath="$PROJECT_DIR$/config/initializers/task_scheduler.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/fabricators/fabricators.rb" afterPath="$PROJECT_DIR$/spec/fabricators/fabricators.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" afterPath="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/bars_spec.rb" afterPath="$PROJECT_DIR$/spec/models/bars_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/reports_spec.rb" afterPath="$PROJECT_DIR$/spec/models/reports_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/users_spec.rb" afterPath="$PROJECT_DIR$/spec/models/users_spec.rb" />
     </list>
     <ignored path="bar_stats.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,27 +36,34 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_non_yelp_dependent_gets_only_the_top_1000_if_there_s_1000_results__bar_stats.coverage" NAME="YelpHelper list for region non yelp dependent gets only the top 1000 if there's 1000 results: bar_stats Coverage Results" MODIFIED="1461786460050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_yelp_dependent__bar_stats.coverage" NAME="YelpHelper list for region yelp dependent: bar_stats Coverage Results" MODIFIED="1461781602844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Reports_adding_a_new_report_tells_the_bar_to_update_it_s_current_report__bar_stats.coverage" NAME="Reports adding a new report tells the bar to update it's current report: bar_stats Coverage Results" MODIFIED="1462043223609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@heuristics__normal_on_models_attribute_returns_an_average_of_a_value_on_all_reports_weighted_with_respect_to_time__bar_stats.coverage" NAME="heuristics #normal_on_models_attribute returns an average of a value on all reports weighted with respect to time: bar_stats Coverage Results" MODIFIED="1462065534211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@heuristics__models_to_array_converts_a_list_of_models__e_g___reports_to_an_array_as_needed_by_normal__bar_stats.coverage" NAME="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats Coverage Results" MODIFIED="1462239343744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Run_spec__bars_helper_spec___bar_stats.coverage" NAME="Run spec 'bars_helper_spec': bar_stats Coverage Results" MODIFIED="1461781386448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__3_.coverage" NAME="db:migrate (3) Coverage Results" MODIFIED="1461788858332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@bars_helper_test.coverage" NAME="bars_helper_test Coverage Results" MODIFIED="1461774761309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/helpers" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@All_tests_in_spec__bar_stats.coverage" NAME="All tests in spec: bar_stats Coverage Results" MODIFIED="1462064057557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports_creates_a_default_current_report__bar_stats.coverage" NAME="Bars current reports creates a default current report: bar_stats Coverage Results" MODIFIED="1462238666044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Reports_adding_a_new_report_updates_the_bar_s_current_report__bar_stats.coverage" NAME="Reports adding a new report updates the bar's current report: bar_stats Coverage Results" MODIFIED="1462042396798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_non_yelp_dependent_gets_only_the_top_1000_if_there_s_1000_results__bar_stats.coverage" NAME="YelpHelper list for region non yelp dependent gets only the top 1000 if there's 1000 results: bar_stats Coverage Results" MODIFIED="1461786460050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_yelp_dependent__bar_stats.coverage" NAME="YelpHelper list for region yelp dependent: bar_stats Coverage Results" MODIFIED="1461781602844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__get_current_report__bar_stats.coverage" NAME="Bars current reports #get_current_report: bar_stats Coverage Results" MODIFIED="1462063962378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__2_.coverage" NAME="db:migrate (2) Coverage Results" MODIFIED="1461788855712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats.coverage" NAME="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats Coverage Results" MODIFIED="1462050086698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats.coverage" NAME="heuristics default takes a weighted average with respect to time: bar_stats Coverage Results" MODIFIED="1462053620322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats.coverage" NAME="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats Coverage Results" MODIFIED="1462127102171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region__bar_stats.coverage" NAME="YelpHelper list for region: bar_stats Coverage Results" MODIFIED="1461786069768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars__get_current_report_gets_the_current_report_when_there_is_one__bar_stats.coverage" NAME="Bars #get_current_report gets the current report when there is one: bar_stats Coverage Results" MODIFIED="1461867649005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@heuristic.coverage" NAME="heuristic Coverage Results" MODIFIED="1462065527490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/helpers" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Run_spec__populate_bars_spec___bar_stats.coverage" NAME="Run spec 'populate_bars_spec': bar_stats Coverage Results" MODIFIED="1461787288297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports_gets_recent_reports__bar_stats.coverage" NAME="Bars current reports gets recent reports: bar_stats Coverage Results" MODIFIED="1462064042567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Development__bar_stats.coverage" NAME="Development: bar_stats Coverage Results" MODIFIED="1461862150796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats.coverage" NAME="heuristics normal takes a weighted average with respect to time: bar_stats Coverage Results" MODIFIED="1462053755861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats.coverage" NAME="heuristics normal takes a weighted average with respect to time: bar_stats Coverage Results" MODIFIED="1462060889172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_yelp_dependent_receives_a_short_list_of_results_with_real_data__bar_stats.coverage" NAME="YelpHelper list for region yelp dependent receives a short list of results with real data: bar_stats Coverage Results" MODIFIED="1461786784573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@bars_helper_test.coverage" NAME="bars_helper_test Coverage Results" MODIFIED="1461774761309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/helpers" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_yelp_dependent_receives_a_long_list_of_results__limit_1000___bar_stats.coverage" NAME="YelpHelper list for region yelp dependent receives a long list of results (limit 1000): bar_stats Coverage Results" MODIFIED="1461786471744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__1_.coverage" NAME="db:migrate (1) Coverage Results" MODIFIED="1461788756516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars_populating__bar_stats.coverage" NAME="Bars populating: bar_stats Coverage Results" MODIFIED="1461786886743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Run_spec__bars_spec___bar_stats.coverage" NAME="Run spec 'bars_spec': bar_stats Coverage Results" MODIFIED="1461789511959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports_creates_a_default_current_report__bar_stats.coverage" NAME="Bars current reports creates a default current report: bar_stats Coverage Results" MODIFIED="1462049822744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@Reports_adding_a_new_report_updates_the_bar_s_current_report__bar_stats.coverage" NAME="Reports adding a new report updates the bar's current report: bar_stats Coverage Results" MODIFIED="1462042396798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Reports_adding_a_new_report_doesn_t_allow_reports_for_the_same_bar_to_be_added_within_15_minutes_of_each_other_for_the_same_user__bar_stats.coverage" NAME="Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats Coverage Results" MODIFIED="1462219705792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -74,52 +73,92 @@
     <favorites_list name="bar_stats" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="fabricators.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/fabricators/fabricators.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heuristic.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/heuristic.rb">
+      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="242">
+              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <file leaf-file-name="report.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/report.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heuristic_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/helpers/heuristic_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bars_helper_spec.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
+      <file leaf-file-name="definition.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/fabrication-2.15.0/lib/fabrication/schematic/definition.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
-              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bars_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bar.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/bar.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="heuristic_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/helpers/heuristic_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/reports_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,7 +205,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20160427210423_remove_crowd_from_bars.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/reports/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160427212521_remove_is_current_from_bars.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -176,15 +214,18 @@
         <option value="$PROJECT_DIR$/spec/factories/factory.rb" />
         <option value="$PROJECT_DIR$/spec/support/shared_db_connection.rb" />
         <option value="$PROJECT_DIR$/config/initializers/task_scheduler.rb" />
-        <option value="$PROJECT_DIR$/spec/fabricators/fabricators.rb" />
-        <option value="$PROJECT_DIR$/app/models/bar.rb" />
-        <option value="$PROJECT_DIR$/app/models/report.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/models/reports_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/bars_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/users_spec.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20160501013157_remove_freshness_from_reports.rb" />
         <option value="$PROJECT_DIR$/app/helpers/heuristic.rb" />
+        <option value="$PROJECT_DIR$/spec/models/bars_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/reports_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/bar.rb" />
+        <option value="$PROJECT_DIR$/spec/fabricators/fabricators.rb" />
+        <option value="$PROJECT_DIR$/app/models/report.rb" />
+        <option value="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" />
       </list>
     </option>
   </component>
@@ -231,7 +272,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -360,6 +400,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar_stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar_stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -460,8 +518,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,8 +542,8 @@
       <recent name="$PROJECT_DIR$/spec/helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.heuristics normal takes a weighted average with respect to time: bar_stats">
-    <configuration default="false" name="Reports adding a new report tells the bar to update it's current report: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats">
+    <configuration default="false" name="heuristics #normal_on_models_attribute returns an average of a value on all reports weighted with respect to time: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="bar_stats" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -504,44 +563,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/reports_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/helpers/heuristic_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Reports adding a new report tells the bar to update it's current report" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Bars current reports creates a default current report: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="bar_stats" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/bars_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Bars current reports creates a default current report" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="heuristics #normal_on_models_attribute returns an average of a value on all reports weighted with respect to time" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -586,7 +611,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="heuristics default takes a weighted average with respect to time: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="bar_stats" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -606,10 +631,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/helpers/heuristic_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/reports_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="heuristics default takes a weighted average with respect to time" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -620,7 +645,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="heuristics normal takes a weighted average with respect to time: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="bar_stats" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -643,7 +668,41 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/helpers/heuristic_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="heuristics normal takes a weighted average with respect to time" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Bars current reports creates a default current report: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="bar_stats" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/bars_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Bars current reports creates a default current report" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -839,19 +898,19 @@
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: bar_stats" />
       <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in bar_stats: bar_stats" />
       <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.Reports adding a new report tells the bar to update it's current report: bar_stats" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.Bars current reports creates a default current report: bar_stats" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
-      <item index="9" class="java.lang.String" itemvalue="RSpec.heuristics default takes a weighted average with respect to time: bar_stats" />
-      <item index="10" class="java.lang.String" itemvalue="RSpec.heuristics normal takes a weighted average with respect to time: bar_stats" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.heuristics #normal_on_models_attribute returns an average of a value on all reports weighted with respect to time: bar_stats" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" />
+      <item index="10" class="java.lang.String" itemvalue="RSpec.Bars current reports creates a default current report: bar_stats" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.heuristics normal takes a weighted average with respect to time: bar_stats" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.heuristics default takes a weighted average with respect to time: bar_stats" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Bars current reports creates a default current report: bar_stats" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Reports adding a new report tells the bar to update it's current report: bar_stats" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Bars current reports creates a default current report: bar_stats" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.heuristics #normal_on_models_attribute returns an average of a value on all reports weighted with respect to time: bar_stats" />
       </list>
     </recent_temporary>
   </component>
@@ -872,44 +931,45 @@
       <workItem from="1461538911914" duration="2246000" />
       <workItem from="1461625323763" duration="7090000" />
       <workItem from="1461774496449" duration="27885000" />
-      <workItem from="1461896896557" duration="7248000" />
+      <workItem from="1461896896557" duration="10310000" />
+      <workItem from="1462063857187" duration="7460000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 16h 36m 21s.xml">
-      <configuration name="heuristics default takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Bars_current_reports_creates_a_default_current_report__bar_stats - 2016.05.02 at 20h 23m 24s.xml">
+      <configuration name="Bars current reports creates a default current report: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 16h 44m 32s.xml">
-      <configuration name="heuristics default takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Bars_current_reports_creates_a_default_current_report__bar_stats - 2016.05.02 at 20h 24m 28s.xml">
+      <configuration name="Bars current reports creates a default current report: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 16h 44m 58s.xml">
-      <configuration name="heuristics default takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 19m 44s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 16h 59m 00s.xml">
-      <configuration name="heuristics default takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 20m 22s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 00m 24s.xml">
-      <configuration name="heuristics default takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 20m 43s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 00m 53s.xml">
-      <configuration name="heuristics normal takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 20m 51s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 01m 19s.xml">
-      <configuration name="heuristics normal takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 20m 57s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 01m 33s.xml">
-      <configuration name="heuristics normal takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 21m 02s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 01m 44s.xml">
-      <configuration name="heuristics normal takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 22m 21s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="heuristics_normal_takes_a_weighted_average_with_respect_to_time__bar_stats - 2016.04.30 at 17h 02m 38s.xml">
-      <configuration name="heuristics normal takes a weighted average with respect to time: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="heuristics_#models_to_array_converts_a_list_of_models_(e_g_)_reports_to_an_array_as_needed_by_normal__bar_stats - 2016.05.02 at 20h 35m 46s.xml">
+      <configuration name="heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44629000" />
+    <option name="totallyTimeSpent" value="55151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -922,21 +982,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="787" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.51666665" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45874125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -957,50 +1017,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/models/bars_spec.rb</url>
-          <line>40</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="71" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/yelp.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/minitest-5.8.4/lib/minitest/assertions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="510" column="8" selection-start-line="510" selection-start-column="8" selection-end-line="510" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/minitest-5.8.4/lib/minitest/expectations.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -1116,13 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20160427205240_add_crowd_to_bars.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1135,13 +1152,6 @@
         <state relative-caret-position="45">
           <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1219,14 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20160428170510_add_address_to_bars.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1253,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,23 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/report.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bar.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,23 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/reports_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="76" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1313,42 +1280,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
+        <state relative-caret-position="1710">
           <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/helpers/heuristic_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/users_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fabricators/fabricators.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20160501013157_remove_freshness_from_bars.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/reports_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20160503005242_add_is_upvote_to_reports.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/fabrication-2.15.0/lib/fabrication/schematic/definition.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/bar.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/report.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/heuristic.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/fabricators/fabricators.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/helpers/heuristic_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding />
         </state>
       </provider>

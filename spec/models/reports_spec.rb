@@ -1,7 +1,7 @@
 require "spec_helper"
 require "rails_helper"
 
-RSpec.describe "Reports" do
+RSpec.describe "Reports", type: :model  do
   let (:reports) { double(ActiveRecord::Associations::CollectionProxy) }
   before(:each) do
     @bar = Fabricate(:bar)
@@ -16,6 +16,12 @@ RSpec.describe "Reports" do
       # Insert 10 reports
       insert_reports(10, @bar)
       expect(@bar).to have_received(:update_current_stats).exactly(10).times
+    end
+
+    it ("doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user") do
+      user = Fabricate(:user)
+      Fabricate(:report, user: user, created_at: 14.minutes.ago)
+      expect{ Fabricate(:report, user: user, created_at: Time.now) }.to raise_error(ActiveRecord::RecordInvalid)
     end
   end
 end

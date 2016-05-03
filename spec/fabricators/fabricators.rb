@@ -5,7 +5,6 @@ end
 Fabricator(:bar) do
   yelp_id { Faker::Company.name }
   name { Faker::Company.name }
-  freshness { Faker::Number.between(0, 9) }
   latitude { Faker::Address.latitude }
   longitude { Faker::Address.latitude }
 end
@@ -18,6 +17,7 @@ Fabricator(:report) do
   crowd { Faker::Number.between(0, 9) }
   bar
   user
+  is_upvote { Faker::Boolean.boolean }
   is_current false
-  created_at { Faker::Time.between(DateTime.now - 1, DateTime.now) }
+  created_at { Faker::Time.between(1.day.ago, Time.now) }
 end
