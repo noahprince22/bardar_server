@@ -26,14 +26,7 @@ class Report < ActiveRecord::Base
   after_create :update_bar_current
 
   def update_bar_current
-    # Naive, current is just the most recent
-    current = self.bar.reports.current
-
-    # Only do stuff if current is defined. If not defined,
-    #  the thing we're creating is the current record
-    if (current)
-      self.bar.update_current_stats
-    end
+    self.bar.update_current_stats
   end
 
 end

@@ -52,6 +52,32 @@ RSpec.describe "Bars", type: :model do
         expect(old.crowd).to be > current.crowd unless old.crowd == 0
         expect(Bar.find(@bar.id).freshness).to be > 9
       end
+
+      # TODO: We're really testing the update_current_stats function, and it has dependencies TimeNormalHeuristic and Aggregate
+      it("does time normal heurstics") do
+        attribute = :cover_charge
+        @bar = Fabricate(:bar) # Using a new bar to identify all of these reports
+
+        half_a_day = DateTime.now - 0.5
+        five_minutes_ago = DateTime.now - 5.0/(60 * 12)
+        now = DateTime.now
+        Fabricate(:report, created_at: half_a_day, attribute => 0.5, bar: @bar)
+        Fabricate(:report, created_at: five_minutes_ago, attribute => 3,  bar: @bar)
+        Fabricate(:report, created_at: now, attribute => 1,  bar: @bar)
+        @bar.reload
+
+        @bar.update_current_stats({
+            "time_normal_heuristic" =>
+                [
+                    {
+                        "attribute" =>attribute,
+                        "std" => 30
+                    }
+                ]
+                                  })
+
+        expect(@bar.reports.current.attributes[attribute.to_s]).to be_within(0.05).of(1.85) # Should be something like (0.73*3 + 1)/(0.87 + 1) = 1.85
+      end
     end
   end
 

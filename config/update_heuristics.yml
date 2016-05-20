@@ -1,0 +1,23 @@
+time_normal_heuristic:
+  [
+    {
+      attribute: "line_length",
+      std: 10
+    },
+    {
+      attribute: "cover_charge",
+      std: 10
+    },
+    {
+      attribute: "ratio",
+      std: 30
+    },
+    {
+      attribute: "avg_age",
+      std: 30
+    },
+    {
+      attribute: "crowd",
+      std: 15
+    }
+  ]

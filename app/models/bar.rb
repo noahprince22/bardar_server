@@ -46,20 +46,18 @@ class Bar < ActiveRecord::Base
     end
   end
 
-  def update_current_stats
-    recent_reports = self.reports.recent
+  def update_current_stats(update_heuristics = YAML.load_file(Rails.root.join('config/update_heuristics.yml')))
+    recent_reports = reports.recent
+    update_heuristics["time_normal_heuristic"] ||= []
 
     if recent_reports.count > 0
-      # normal for everything, with arbitrary varying times.
-      #  TODO: adjust these time spans based on actual data.
-      current = self.reports.current
-      current.line_length = Heuristic.normal_on_models_attribute(recent_reports, :line_length, 10)
-      current.cover_charge = Heuristic.normal_on_models_attribute(recent_reports, :cover_charge, 10)
-      current.ratio = Heuristic.normal_on_models_attribute(recent_reports, :ratio, 30)
-      current.avg_age = Heuristic.normal_on_models_attribute(recent_reports, :avg_age, 30)
-      current.crowd = Heuristic.normal_on_models_attribute(recent_reports, :crowd, 15)
+      update_heuristics["time_normal_heuristic"].each do |entry|
+        attribute = entry["attribute"].to_s
+        weight_fn = lambda { |report| TimeNormalHeuristic.time_p_value(report.created_at, entry["std"]) }
+        value_fn = lambda { |report| report.instance_eval(attribute) }
 
-      current.save!
+        reports.current.update_attribute(attribute, Aggregate.weighted_average(recent_reports, value_fn, weight_fn))
+      end
     end
   end
 
@@ -86,6 +84,6 @@ class Bar < ActiveRecord::Base
     #   puts "#{i}: #{10*Heuristic.p_value({ time: Time.now - (i*10).minutes }, 60)}"
     # end
 
-    return 10*Heuristic.p_value({ time: self.updated_at }, 60)
+    return 10*TimeNormalHeuristic.time_p_value(self.updated_at, 60)
   end
 end

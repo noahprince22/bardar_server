@@ -3,6 +3,5 @@ class MainController < ApplicationController
     @cities = ["Effingham", "Champaign"]
     params[:city] ||= "Champaign"
     @bars = Bar.near(params[:city], 20)
-    lolercoster = 0
   end
 end
