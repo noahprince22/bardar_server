@@ -28,6 +28,6 @@ class BarsController < ApplicationController
   end
 
   def near_me
-    render json: Bar.near([params[:latitude], params[:longitude]], params[:radius])
+    render json: Bar.near([params[:latitude], params[:longitude]], params[:radius]).order("distance")
   end
 end
