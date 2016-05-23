@@ -7,19 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70bbdaf-9853-4878-9657-e2868c431d8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/concerns/Aggregate.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/concerns/time_normal_heuristic.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/update_heuristics.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/heuristic.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/helpers/heuristic_spec.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bar_stats.iml" afterPath="$PROJECT_DIR$/.idea/bar_stats.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bar.rb" afterPath="$PROJECT_DIR$/app/models/bar.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/report.rb" afterPath="$PROJECT_DIR$/app/models/report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/bars_spec.rb" afterPath="$PROJECT_DIR$/spec/models/bars_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" afterPath="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" />
     </list>
     <ignored path="bar_stats.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +44,7 @@
     <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__get_current_report__bar_stats.coverage" NAME="Bars current reports #get_current_report: bar_stats Coverage Results" MODIFIED="1462063962378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__2_.coverage" NAME="db:migrate (2) Coverage Results" MODIFIED="1461788855712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@heuristics_default_takes_a_weighted_average_with_respect_to_time__bar_stats.coverage" NAME="heuristics default takes a weighted average with respect to time: bar_stats Coverage Results" MODIFIED="1462053620322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats.coverage" NAME="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats Coverage Results" MODIFIED="1463717046712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats.coverage" NAME="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats Coverage Results" MODIFIED="1464026636459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region__bar_stats.coverage" NAME="YelpHelper list for region: bar_stats Coverage Results" MODIFIED="1461786069768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars__get_current_report_gets_the_current_report_when_there_is_one__bar_stats.coverage" NAME="Bars #get_current_report gets the current report when there is one: bar_stats Coverage Results" MODIFIED="1461867649005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@heuristic.coverage" NAME="heuristic Coverage Results" MODIFIED="1462065527490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/helpers" MODULE_NAME="bar_stats" />
@@ -97,21 +88,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bar.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bar.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bar.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+            <state relative-caret-position="330">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bars_spec.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bars_helper_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yelp_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bars_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,7 +169,6 @@
         <option value="$PROJECT_DIR$/app/controllers/concerns/yelp_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160427183628_replace_yelp_id_with_yelp_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160427193755_add_lat_lng_to_bars.rb" />
-        <option value="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" />
         <option value="$PROJECT_DIR$/spec/integration/populate_bars_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20160427201005_add_bar_id_to_reports.rb" />
         <option value="$PROJECT_DIR$/app/models/users.rb" />
@@ -183,7 +203,9 @@
         <option value="$PROJECT_DIR$/app/models/concerns/time_normal_heuristic.rb" />
         <option value="$PROJECT_DIR$/app/models/concerns/aggregate.rb" />
         <option value="$PROJECT_DIR$/spec/models/bars_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/bar.rb" />
+        <option value="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" />
       </list>
     </option>
   </component>
@@ -431,24 +453,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bar_stats" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bar_stats" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -501,7 +505,7 @@
       <recent name="$PROJECT_DIR$/spec/helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Bars current reports #update_current_stats does time normal heurstics: bar_stats">
+  <component name="RunManager" selected="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats">
     <configuration default="false" name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="bar_stats" />
@@ -865,8 +869,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats does time normal heurstics: bar_stats" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats does time normal heurstics: bar_stats" />
         <item index="2" class="java.lang.String" itemvalue="RSpec.Bars current reports creates a default current report: bar_stats" />
         <item index="3" class="java.lang.String" itemvalue="RSpec.heuristics #models_to_array converts a list of models (e.g.) reports to an array as needed by normal: bar_stats" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.Reports adding a new report doesn't allow reports for the same bar to be added within 15 minutes of each other for the same user: bar_stats" />
@@ -893,20 +897,11 @@
       <workItem from="1461896896557" duration="10310000" />
       <workItem from="1462063857187" duration="7972000" />
       <workItem from="1463539950954" duration="447000" />
-      <workItem from="1463541428535" duration="9595000" />
+      <workItem from="1463541428535" duration="10528000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Bars_current_reports_#update_current_stats_does_time_normal_heurstics__bar_stats - 2016.05.19 at 22h 59m 55s.xml">
-      <configuration name="Bars current reports #update_current_stats does time normal heurstics: bar_stats" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_does_time_normal_heurstics__bar_stats - 2016.05.19 at 23h 06m 25s.xml">
-      <configuration name="Bars current reports #update_current_stats does time normal heurstics: bar_stats" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_does_time_normal_heurstics__bar_stats - 2016.05.19 at 23h 06m 46s.xml">
-      <configuration name="Bars current reports #update_current_stats does time normal heurstics: bar_stats" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Bars_current_reports_#update_current_stats_does_time_normal_heurstics__bar_stats - 2016.05.19 at 23h 09m 11s.xml">
       <configuration name="Bars current reports #update_current_stats does time normal heurstics: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -916,21 +911,30 @@
     <history-entry file="Bars_current_reports_#update_current_stats_does_time_normal_heurstics__bar_stats - 2016.05.19 at 23h 09m 58s.xml">
       <configuration name="Bars current reports #update_current_stats does time normal heurstics: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.19 at 23h 02m 05s.xml">
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 00m 13s.xml">
       <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.19 at 23h 02m 27s.xml">
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 01m 12s.xml">
       <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.19 at 23h 04m 06s.xml">
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 03m 20s.xml">
       <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.19 at 23h 04m 45s.xml">
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 03m 33s.xml">
+      <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 03m 42s.xml">
+      <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 03m 48s.xml">
+      <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Bars_current_reports_#update_current_stats_has_a_lower_average_when_a_0_report_is_added__bar_stats - 2016.05.23 at 13h 03m 59s.xml">
       <configuration name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65705000" />
+    <option name="totallyTimeSpent" value="66638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -943,7 +947,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="787" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -954,7 +958,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.51666665" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45874125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -998,21 +1002,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/models/bars_spec.rb</url>
+          <line>47</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="102" />
+      <option name="time" value="104" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20160427193755_add_lat_lng_to_bars.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1199,13 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/users_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1341,14 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/time_normal.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1373,18 +1362,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bar.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+        <state relative-caret-position="330">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/bars_helper_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0/gems/rspec-core-3.4.4/lib/rspec/core/example.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="235" column="0" selection-start-line="235" selection-start-column="0" selection-end-line="235" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding />
         </state>
       </provider>

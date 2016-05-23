@@ -1,17 +1,16 @@
-class YelpHelper
-  def self.build_from_yelp_config(yelp_config_path = Rails.root.join('config/yelp.yml'))
+module YelpBuilder
+  def self.from_yelp_config(yelp_config_path = Rails.root.join('config/yelp.yml'))
     config = YAML.load_file(yelp_config_path)
-    new(
-        Yelp::Client.new({
-                             consumer_key: config["consumer_key"],
-                             consumer_secret: config["consumer_secret"],
-                             token: config["token"],
-                             token_secret: config["token_secret"]
-                         })
-    )
+    return Yelp::Client.new({
+                         consumer_key: config["consumer_key"],
+                         consumer_secret: config["consumer_secret"],
+                         token: config["token"],
+                         token_secret: config["token_secret"]
+                     })
   end
+end
 
-  # Can pass in an existing yelp client. Or use the build_from_yelp_config function
+class YelpHelper
   # @param [Yelp::Client] yelp_client
   def initialize(yelp_client)
     @yelp = yelp_client

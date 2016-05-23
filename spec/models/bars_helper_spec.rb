@@ -58,7 +58,7 @@ RSpec.describe "YelpHelper" do
       #   YelpHelper.build_from_yelp_config.get_bars(location)
       # end
       it "receives a short list of results with real data" do
-        YelpHelper.build_from_yelp_config.get_bars("Effingham")
+        YelpHelper.new(YelpBuilder.from_yelp_config).get_bars("Effingham")
       end
     end
   end
