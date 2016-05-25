@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70bbdaf-9853-4878-9657-e2868c431d8a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/concerns/yelp/yelp_factory.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" afterPath="$PROJECT_DIR$/app/models/concerns/yelp/yelp_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bar_stats.iml" afterPath="$PROJECT_DIR$/.idea/bar_stats.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/bars_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/bars_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/bars_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/bars_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bar.rb" afterPath="$PROJECT_DIR$/app/models/bar.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" afterPath="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" />
     </list>
     <ignored path="bar_stats.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +37,7 @@
     <SUITE FILE_PATH="coverage/bar_stats@Run_spec__bars_helper_spec___bar_stats.coverage" NAME="Run spec 'bars_helper_spec': bar_stats Coverage Results" MODIFIED="1461781386448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__3_.coverage" NAME="db:migrate (3) Coverage Results" MODIFIED="1461788858332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@bars_helper_test.coverage" NAME="bars_helper_test Coverage Results" MODIFIED="1461774761309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/helpers" MODULE_NAME="bar_stats" />
-    <SUITE FILE_PATH="coverage/bar_stats@BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats.coverage" NAME="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats Coverage Results" MODIFIED="1464039275466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats.coverage" NAME="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats Coverage Results" MODIFIED="1464039312357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@All_tests_in_spec__bar_stats.coverage" NAME="All tests in spec: bar_stats Coverage Results" MODIFIED="1462064057557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports_creates_a_default_current_report__bar_stats.coverage" NAME="Bars current reports creates a default current report: bar_stats Coverage Results" MODIFIED="1462238666044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Reports_adding_a_new_report_updates_the_bar_s_current_report__bar_stats.coverage" NAME="Reports adding a new report updates the bar's current report: bar_stats Coverage Results" MODIFIED="1462042396798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
@@ -43,6 +45,7 @@
     <SUITE FILE_PATH="coverage/bar_stats@YelpHelper_list_for_region_yelp_dependent__bar_stats.coverage" NAME="YelpHelper list for region yelp dependent: bar_stats Coverage Results" MODIFIED="1461781602844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__update_current_stats_does_time_normal_heurstics__bar_stats.coverage" NAME="Bars current reports #update_current_stats does time normal heurstics: bar_stats Coverage Results" MODIFIED="1463717394235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@Bars_current_reports__get_current_report__bar_stats.coverage" NAME="Bars current reports #get_current_report: bar_stats Coverage Results" MODIFIED="1462063962378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
+    <SUITE FILE_PATH="coverage/bar_stats@All_specs_in_yelp__bar_stats.coverage" NAME="All specs in yelp: bar_stats Coverage Results" MODIFIED="1464191907781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@ReportsController_GET_near_me_returns_a_list_of_closest_bars__bar_stats.coverage" NAME="ReportsController GET near me returns a list of closest bars: bar_stats Coverage Results" MODIFIED="1464028033832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@BarsController_GET_near_me_returns_a_list_of_closest_bars__bar_stats.coverage" NAME="BarsController GET near me returns a list of closest bars: bar_stats Coverage Results" MODIFIED="1464029742979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
     <SUITE FILE_PATH="coverage/bar_stats@db_migrate__2_.coverage" NAME="db:migrate (2) Coverage Results" MODIFIED="1461788855712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="bar_stats" />
@@ -132,11 +135,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bars_controller_spec.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bars_controller_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/controllers/bars_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yelp_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp/yelp_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yelp_factory.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp/yelp_factory.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -161,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/config/yelp.yml" />
         <option value="$PROJECT_DIR$/app/helpers/bars_helper.rb" />
@@ -204,7 +236,6 @@
         <option value="$PROJECT_DIR$/app/models/concerns/time_normal_heuristic.rb" />
         <option value="$PROJECT_DIR$/app/models/concerns/aggregate.rb" />
         <option value="$PROJECT_DIR$/spec/models/bars_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" />
         <option value="$PROJECT_DIR$/spec/models/bars_helper_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/bar.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
@@ -212,6 +243,8 @@
         <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bars_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/bars_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/concerns/yelp_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/concerns/yelp/yelp_factory.rb" />
       </list>
     </option>
   </component>
@@ -459,6 +492,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concerns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yelp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar_stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bar_stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -504,48 +563,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models/concerns/yelp" />
       <recent name="$PROJECT_DIR$/app/models/concerns" />
       <recent name="$PROJECT_DIR$/app/helpers" />
       <recent name="$PROJECT_DIR$/spec/models" />
       <recent name="$PROJECT_DIR$/app/controllers/concerns" />
-      <recent name="$PROJECT_DIR$/spec/helpers" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.BarsController GET near me returns a list of closest bars sorted by distance: bar_stats">
-    <configuration default="false" name="Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="bar_stats" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/bars_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Bars current reports #update_current_stats has a lower average when a 0 report is added" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.All specs in yelp: bar_stats">
     <configuration default="false" name="ReportsController GET near me returns a list of closest bars: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="bar_stats" />
@@ -673,6 +698,40 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="BarsController GET near me returns a list of closest bars sorted by distance" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All specs in yelp: bar_stats" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="bar_stats" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/app/models/concerns/yelp" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
@@ -867,19 +926,19 @@
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: bar_stats" />
       <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.All tests in bar_stats: bar_stats" />
       <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.ReportsController GET near me returns a list of closest bars: bar_stats" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars: bar_stats" />
-      <item index="9" class="java.lang.String" itemvalue="RSpec.BarsController GET near me: bar_stats" />
-      <item index="10" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.ReportsController GET near me returns a list of closest bars: bar_stats" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars: bar_stats" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.BarsController GET near me: bar_stats" />
+      <item index="9" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" />
+      <item index="10" class="java.lang.String" itemvalue="RSpec.All specs in yelp: bar_stats" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars: bar_stats" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.BarsController GET near me: bar_stats" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.ReportsController GET near me returns a list of closest bars: bar_stats" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.Bars current reports #update_current_stats has a lower average when a 0 report is added: bar_stats" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in yelp: bar_stats" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.BarsController GET near me returns a list of closest bars: bar_stats" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.BarsController GET near me: bar_stats" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.ReportsController GET near me returns a list of closest bars: bar_stats" />
       </list>
     </recent_temporary>
   </component>
@@ -903,19 +962,13 @@
       <workItem from="1461896896557" duration="10310000" />
       <workItem from="1462063857187" duration="7972000" />
       <workItem from="1463539950954" duration="447000" />
-      <workItem from="1463541428535" duration="14176000" />
+      <workItem from="1463541428535" duration="14637000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 25m 56s.xml">
-      <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 26m 09s.xml">
-      <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 26m 50s.xml">
-      <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_yelp__bar_stats - 2016.05.25 at 10h 58m 28s.xml">
+      <configuration name="All specs in yelp: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 27m 25s.xml">
       <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
@@ -938,9 +991,15 @@
     <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 34m 32s.xml">
       <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 35m 09s.xml">
+      <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="BarsController_GET_near_me_returns_a_list_of_closest_bars_sorted_by_distance__bar_stats - 2016.05.23 at 16h 35m 15s.xml">
+      <configuration name="BarsController GET near me returns a list of closest bars sorted by distance: bar_stats" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70286000" />
+    <option name="totallyTimeSpent" value="70747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -962,11 +1021,11 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.51666665" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45874125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45874125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1023,34 +1082,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="106" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20160427201005_add_bar_id_to_reports.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20160427201907_add_is_current_to_bars.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20160425231427_create_bars.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20160427202427_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1333,14 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/bars_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1415,8 +1443,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/bars_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/concerns/YelpFactory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp/yelp_factory.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/concerns/yelp/yelp_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

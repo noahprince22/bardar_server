@@ -32,7 +32,7 @@ class Bar < ActiveRecord::Base
     )
   end
 
-  def self.populate(cities, yelp = YelpHelper.new(YelpBuilder.from_yelp_config))
+  def self.populate(cities, yelp = YelpHelper.new(YelpFactory.from_yelp_config))
     cities.each do |city|
       yelp.get_bars(city).each do |bar|
         if (!Bar.exists?(yelp_id: bar.id, name: bar.name))
