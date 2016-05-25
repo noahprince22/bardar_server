@@ -23,10 +23,12 @@ class Report < ActiveRecord::Base
 
 
   validates_with UserReportValidator
-  after_create :update_bar_current
 
-  def update_bar_current
-    self.bar.update_current_stats
+  after_create :_update_bar
+  after_update :_update_bar
+
+  def _update_bar
+    self.bar.report_added(self)
   end
 
 end

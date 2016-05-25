@@ -5,7 +5,7 @@ class Bar < ActiveRecord::Base
 
   validates :yelp_id, presence: true, uniqueness: true
 
-  after_create :set_default_current
+  after_create :_set_default_current
 
   has_many :reports do
     def current
@@ -18,7 +18,11 @@ class Bar < ActiveRecord::Base
     end
   end
 
-  def set_default_current
+  def report_added(report)
+    _update_current_stats
+  end
+
+  def _set_default_current
     Report.create(
               bar_id: id,
               line_length: 0,
@@ -46,7 +50,7 @@ class Bar < ActiveRecord::Base
     end
   end
 
-  def update_current_stats(update_heuristics = YAML.load_file(Rails.root.join('config/update_heuristics.yml')))
+  def _update_current_stats(update_heuristics = YAML.load_file(Rails.root.join('config/update_heuristics.yml')))
     recent_reports = reports.recent
     update_heuristics["time_normal_heuristic"] ||= []
 
